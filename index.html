@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="لیست روزانه Clean IP و کانفیگ‌های V2Ray/Xray (Fast / Premium / Ultimate) + دانلود مستقیم." />
+  <title>V2Ray Clean IPs & Configs — Daily</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="badge">Daily • Clean IPs • V2Ray/Xray</div>
+
+      <h1 id="t_title">لیست روزانه IP های تمیز و کانفیگ‌های V2Ray/Xray</h1>
+      <p class="subtitle" id="t_subtitle">
+        دانلود مستقیم فایل‌ها، آپدیت روزانه، مناسب اینترنت ایران.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn ghost" id="langBtn" type="button" onclick="toggleLang()">English</button>
+        <a class="btn primary" href="#download" id="t_cta">رفتن به دانلودها</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="k" id="t_stat1k">آپدیت</div>
+          <div class="v" id="t_stat1v">روزانه</div>
+        </div>
+        <div class="stat">
+          <div class="k" id="t_stat2k">فرمت‌ها</div>
+          <div class="v">VLESS / VMESS / ...</div>
+        </div>
+        <div class="stat">
+          <div class="k" id="t_stat3k">سازگار با</div>
+          <div class="v">v2rayNG • Hiddify • FoXray</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2 id="t_f_title">چرا اینجا؟</h2>
+        <ul class="list">
+          <li id="t_f1">IPهای تمیز برای CDN / Cloudflare (مناسب‌تر برای اتصال).</li>
+          <li id="t_f2">فایل‌های سبک و سنگین برای همه نوع کاربری.</li>
+          <li id="t_f3">لینک‌های دانلود مستقیم + آماده کپی/ایمپورت.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 id="t_h_title">راهنمای سریع</h2>
+        <ol class="steps">
+          <li id="t_h1">یکی از فایل‌ها را دانلود کن.</li>
+          <li id="t_h2">محتوا را کپی کن.</li>
+          <li id="t_h3">در اپ (v2rayNG/Hiddify) Import کن و تست بگیر.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="download" id="download">
+      <div class="section-head">
+        <h2 id="t_d_title">دانلود مستقیم</h2>
+        <p class="muted" id="t_d_desc">فقط روی لینک‌ها کلیک کن. اگر خواستی، بعداً اسم فایل‌ها را عوض کن و اینجا هم آپدیت کن.</p>
+      </div>
+
+      <!-- لینک فایل‌ها: اینجا فقط اسم فایل‌هات مهمه -->
+      <div class="dl-grid">
+        <a class="dl-item" href="./Clean-IPs-2026-01-26.txt" download>
+          <div class="dl-emoji">✅</div>
+          <div class="dl-body">
+            <div class="dl-title" id="t_dl1">Clean IPs (Today)</div>
+            <div class="dl-sub" id="t_dl1s">لیست IPهای تمیز</div>
+          </div>
+          <div class="dl-arrow">↓</div>
+        </a>
+
+        <a class="dl-item" href="./V2ray-Config-2026-01-26-Small.txt" download>
+          <div class="dl-emoji">🚀</div>
+          <div class="dl-body">
+            <div class="dl-title" id="t_dl2">Fast (Small)</div>
+            <div class="dl-sub" id="t_dl2s">سبک و سریع برای تست</div>
+          </div>
+          <div class="dl-arrow">↓</div>
+        </a>
+
+        <a class="dl-item" href="./V2ray-Config-Premium-2026-01-26-Full.txt" download>
+          <div class="dl-emoji">⭐</div>
+          <div class="dl-body">
+            <div class="dl-title" id="t_dl3">Premium (Full)</div>
+            <div class="dl-sub" id="t_dl3s">لیست کامل‌تر</div>
+          </div>
+          <div class="dl-arrow">↓</div>
+        </a>
+
+        <a class="dl-item" href="./V2ray-Config-Ultimate-2026-01-26-All.txt" download>
+          <div class="dl-emoji">🔥</div>
+          <div class="dl-body">
+            <div class="dl-title" id="t_dl4">Ultimate (All)</div>
+            <div class="dl-sub" id="t_dl4s">همه‌چیز یکجا</div>
+          </div>
+          <div class="dl-arrow">↓</div>
+        </a>
+      </div>
+
+      <div class="note">
+        <div class="note-dot"></div>
+        <p id="t_note">
+          نکته: این صفحه با GitHub Pages بهترین خروجی را می‌دهد. README فقط معرفی و لینک می‌ماند.
+        </p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div class="foot-left">
+        <span id="t_last">آخرین آپدیت:</span>
+        <strong id="lastUpdate">2026-01-26</strong>
+      </div>
+      <div class="foot-right">
+        <a class="link" href="./README.md">README</a>
+        <span class="dot">•</span>
+        <a class="link" href="./LICENSE">MIT License</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const fa = {
+      title: "لیست روزانه IP های تمیز و کانفیگ‌های V2Ray/Xray",
+      subtitle: "دانلود مستقیم فایل‌ها، آپدیت روزانه، مناسب اینترنت ایران.",
+      cta: "رفتن به دانلودها",
+      stat1k: "آپدیت",
+      stat1v: "روزانه",
+      stat2k: "فرمت‌ها",
+      stat3k: "سازگار با",
+      f_title: "چرا اینجا؟",
+      f1: "IPهای تمیز برای CDN / Cloudflare (مناسب‌تر برای اتصال).",
+      f2: "فایل‌های سبک و سنگین برای همه نوع کاربری.",
+      f3: "لینک‌های دانلود مستقیم + آماده کپی/ایمپورت.",
+      h_title: "راهنمای سریع",
+      h1: "یکی از فایل‌ها را دانلود کن.",
+      h2: "محتوا را کپی کن.",
+      h3: "در اپ (v2rayNG/Hiddify) Import کن و تست بگیر.",
+      d_title: "دانلود مستقیم",
+      d_desc: "فقط روی لینک‌ها کلیک کن. اگر خواستی، بعداً اسم فایل‌ها را عوض کن و اینجا هم آپدیت کن.",
+      dl1: "Clean IPs (Today)",
+      dl1s: "لیست IPهای تمیز",
+      dl2: "Fast (Small)",
+      dl2s: "سبک و سریع برای تست",
+      dl3: "Premium (Full)",
+      dl3s: "لیست کامل‌تر",
+      dl4: "Ultimate (All)",
+      dl4s: "همه‌چیز یکجا",
+      note: "نکته: این صفحه با GitHub Pages بهترین خروجی را می‌دهد. README فقط معرفی و لینک می‌ماند.",
+      last: "آخرین آپدیت:",
+      btn: "English"
+    };
+
+    const en = {
+      title: "Daily Clean IPs & V2Ray/Xray Configs",
+      subtitle: "Direct downloads, daily updates, optimized for unstable networks.",
+      cta: "Go to downloads",
+      stat1k: "Update",
+      stat1v: "Daily",
+      stat2k: "Formats",
+      stat3k: "Works with",
+      f_title: "Why this repo?",
+      f1: "Clean IPs for CDN / Cloudflare paths (often more stable).",
+      f2: "Light and full lists for different needs.",
+      f3: "Direct download links + ready to import.",
+      h_title: "Quick guide",
+      h1: "Download one of the files.",
+      h2: "Copy the configs.",
+      h3: "Import in your app (v2rayNG/Hiddify) and test.",
+      d_title: "Direct download",
+      d_desc: "Click a file to download. If you rename files later, update links here too.",
+      dl1: "Clean IPs (Today)",
+      dl1s: "Clean IP list",
+      dl2: "Fast (Small)",
+      dl2s: "Light & quick testing",
+      dl3: "Premium (Full)",
+      dl3s: "More complete list",
+      dl4: "Ultimate (All)",
+      dl4s: "Everything in one file",
+      note: "Tip: This page looks best on GitHub Pages. Keep README for docs + links.",
+      last: "Last update:",
+      btn: "فارسی"
+    };
+
+    let isEn = false;
+
+    function applyLang(d) {
+      document.documentElement.lang = isEn ? "en" : "fa";
+      document.documentElement.dir = isEn ? "ltr" : "rtl";
+
+      document.getElementById("t_title").textContent = d.title;
+      document.getElementById("t_subtitle").textContent = d.subtitle;
+      document.getElementById("t_cta").textContent = d.cta;
+
+      document.getElementById("t_stat1k").textContent = d.stat1k;
+      document.getElementById("t_stat1v").textContent = d.stat1v;
+      document.getElementById("t_stat2k").textContent = d.stat2k;
+      document.getElementById("t_stat3k").textContent = d.stat3k;
+
+      document.getElementById("t_f_title").textContent = d.f_title;
+      document.getElementById("t_f1").textContent = d.f1;
+      document.getElementById("t_f2").textContent = d.f2;
+      document.getElementById("t_f3").textContent = d.f3;
+
+      document.getElementById("t_h_title").textContent = d.h_title;
+      document.getElementById("t_h1").textContent = d.h1;
+      document.getElementById("t_h2").textContent = d.h2;
+      document.getElementById("t_h3").textContent = d.h3;
+
+      document.getElementById("t_d_title").textContent = d.d_title;
+      document.getElementById("t_d_desc").textContent = d.d_desc;
+
+      document.getElementById("t_dl1").textContent = d.dl1;
+      document.getElementById("t_dl1s").textContent = d.dl1s;
+      document.getElementById("t_dl2").textContent = d.dl2;
+      document.getElementById("t_dl2s").textContent = d.dl2s;
+      document.getElementById("t_dl3").textContent = d.dl3;
+      document.getElementById("t_dl3s").textContent = d.dl3s;
+      document.getElementById("t_dl4").textContent = d.dl4;
+      document.getElementById("t_dl4s").textContent = d.dl4s;
+
+      document.getElementById("t_note").textContent = d.note;
+      document.getElementById("t_last").textContent = d.last;
+
+      document.getElementById("langBtn").textContent = d.btn;
+    }
+
+    function toggleLang() {
+      isEn = !isEn;
+      applyLang(isEn ? en : fa);
+    }
+
+    applyLang(fa);
+  </script>
+</body>
+</html>
