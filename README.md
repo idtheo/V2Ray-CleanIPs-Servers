@@ -19,7 +19,7 @@
 > لینک‌های زیر **relative** هستن و داخل خود ریپو درست کار می‌کنن. [web:94][web:88]
 
 - ✅ Clean IPs (Today): **[Clean-IPs.txt](./Clean-IPs.txt)**
-- 🚀 Fast configs (Small): **[V2ray-Config-Small.txt](./V2ray-Small.txt)**
+- 🚀 Fast configs (Small): **[V2ray-Config-Small.txt](./V2ray-Config-Small.txt)**
 - ⭐ Premium configs (Full): **[V2ray-Config-Full.txt](./V2ray-Config-Full.txt)**
 - 🔥 Ultimate configs (All): **[V2ray-Config-All.txt](./V2ray-Config-All.txt)**
 
