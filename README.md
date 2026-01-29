@@ -8,12 +8,11 @@
   alt="V2Ray Clean IPs Header"
 />
 
-<br/>
+<p align="center">
+  <b>Daily updated clean IPs & V2Ray / Xray configurations</b><br/>
+  <sub>Fast • Premium • Ultimate</sub>
+</p>
 
-**🇮🇷 لیست روزانه IP های تمیز + کانفیگ‌های V2Ray/Xray (Fast / Premium / Ultimate)**  
-**🇺🇸 Daily updated Clean IPs + V2Ray/Xray configs (Fast / Premium / Ultimate)**
-
-<br/>
 
 <!-- Cute Pink Badges -->
 <img alt="Daily" src="https://img.shields.io/badge/Update-Daily-ff69b4?style=for-the-badge" />
