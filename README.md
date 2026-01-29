@@ -9,8 +9,9 @@
 />
 
 <p align="center">
-  <b>Daily updated clean IPs & V2Ray / Xray configurations</b><br/>
-  <sub>Fast • Premium • Ultimate</sub>
+  Daily updated clean IPs & V2Ray / Xray configurations
+  <br/>
+  <sub>لیست روزانه IP های تمیز و کانفیگ‌های V2Ray / Xray</sub>
 </p>
 
 
