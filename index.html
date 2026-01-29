@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="لیست روزانه Clean IP و کانفیگ‌های V2Ray/Xray (Fast / Premium / Ultimate) + دانلود مستقیم." />
-  <meta name="theme-color" content="#ff4fa3" />
-  <title>V2Ray Clean IPs & Configs — Daily</title>
+  <meta name="description" content="Daily updated clean IPs + V2Ray/Xray configs (Fast / Premium / Ultimate) with cute pink UI and direct downloads." />
+  <meta name="theme-color" content="#ff5fb7" />
+  <title>V2Ray Clean IPs — Cute Pink Hub</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,242 +15,417 @@
 </head>
 
 <body>
-  <div class="bg" aria-hidden="true"></div>
+  <!-- Cute background layers -->
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="sparkles"></div>
+    <div class="hearts" aria-hidden="true"></div>
+  </div>
 
   <main class="wrap">
-    <header class="hero">
-      <div class="badge" id="t_badge">Daily updates • Clean IPs • V2Ray/Xray</div>
-
-      <h1 id="t_title">لیست روزانه IP های تمیز و کانفیگ‌های V2Ray/Xray</h1>
-
-      <p class="subtitle" id="t_subtitle">
-        دانلود مستقیم فایل‌ها با آپدیت روزانه — طراحی شده برای تست سریع و انتخاب بهترین گزینه.
-      </p>
-
-      <div class="hero-actions">
-        <button class="btn ghost" id="langBtn" type="button" onclick="toggleLang()">English</button>
-        <a class="btn primary" href="#download" id="t_cta">رفتن به دانلودها</a>
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">💗</div>
+        <div class="brand-text">
+          <div class="brand-title">V2Ray Clean Hub</div>
+          <div class="brand-sub" id="t_tagline">Cute • Daily • Direct</div>
+        </div>
       </div>
 
-      <div class="stats" role="list">
-        <div class="stat" role="listitem">
-          <div class="k" id="t_stat1k">آپدیت</div>
-          <div class="v" id="t_stat1v">روزانه</div>
-        </div>
-        <div class="stat" role="listitem">
-          <div class="k" id="t_stat2k">فرمت‌ها</div>
-          <div class="v" id="t_stat2v">VLESS • VMESS • Trojan • ...</div>
-        </div>
-        <div class="stat" role="listitem">
-          <div class="k" id="t_stat3k">سازگار با</div>
-          <div class="v" id="t_stat3v">v2rayNG • Hiddify • FoXray</div>
-        </div>
+      <div class="top-actions">
+        <button class="chip" type="button" id="langBtn" onclick="toggleLang()">English</button>
+        <a class="chip" href="#download" id="t_quick">دانلودها</a>
       </div>
     </header>
 
-    <section class="grid">
-      <article class="card">
-        <h2 id="t_f_title">چرا اینجا؟</h2>
-        <ul class="list">
-          <li id="t_f1">IPهای تمیز برای مسیرهای CDN/Cloudflare (اغلب پایدارتر).</li>
-          <li id="t_f2">فایل‌های سبک و کامل برای نیازهای مختلف.</li>
-          <li id="t_f3">لینک‌های دانلود مستقیم + آماده کپی/ایمپورت.</li>
-        </ul>
-      </article>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="stickers">
+          <span class="sticker s1">✨</span>
+          <span class="sticker s2">🧁</span>
+          <span class="sticker s3">🌸</span>
+          <span class="sticker s4">🎀</span>
+        </div>
 
-      <article class="card">
-        <h2 id="t_h_title">راهنمای سریع</h2>
-        <ol class="steps">
-          <li id="t_h1">یکی از فایل‌ها را دانلود کن.</li>
-          <li id="t_h2">محتوا را کپی کن.</li>
-          <li id="t_h3">در اپ Import کن و چند گزینه را تست بگیر.</li>
-        </ol>
-      </article>
+        <div class="pill-row">
+          <span class="pill" id="t_p1">آپدیت روزانه</span>
+          <span class="pill" id="t_p2">دانلود مستقیم</span>
+          <span class="pill" id="t_p3">سریع برای تست</span>
+        </div>
+
+        <h1 class="hero-title" id="t_title">
+          مرکز کیوتِ Clean IP ها و کانفیگ‌های V2Ray/Xray
+        </h1>
+
+        <p class="hero-sub" id="t_subtitle">
+          همه‌چی آماده‌ست: فایل‌ها رو بگیر، ایمپورت کن، بهترین پینگ رو انتخاب کن 💞
+        </p>
+
+        <div class="cta-row">
+          <a class="btn jelly primary" href="#download" id="t_cta1">بریم دانلود 😼</a>
+          <a class="btn jelly ghost" href="#how" id="t_cta2">راهنمای سریع</a>
+        </div>
+
+        <div class="mini-stats" role="list">
+          <div class="mini" role="listitem">
+            <div class="mini-k" id="t_m1k">آپدیت</div>
+            <div class="mini-v" id="t_m1v">Daily</div>
+          </div>
+          <div class="mini" role="listitem">
+            <div class="mini-k" id="t_m2k">مناسب برای</div>
+            <div class="mini-v" id="t_m2v">v2rayNG / Hiddify</div>
+          </div>
+          <div class="mini" role="listitem">
+            <div class="mini-k" id="t_m3k">فرمت‌ها</div>
+            <div class="mini-v" id="t_m3v">VLESS • VMESS • ...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mascot card -->
+      <div class="hero-right">
+        <div class="mascot-card">
+          <div class="mascot-top">
+            <div class="mascot-face" aria-hidden="true">
+              <div class="eye e1"></div>
+              <div class="eye e2"></div>
+              <div class="blush bl1"></div>
+              <div class="blush bl2"></div>
+              <div class="mouth"></div>
+            </div>
+            <div class="mascot-badge" id="t_mascot">I’m your pink helper!</div>
+          </div>
+
+          <div class="mascot-body">
+            <div class="bubble">
+              <div class="bubble-title" id="t_b1t">Tip 💡</div>
+              <div class="bubble-text" id="t_b1">
+                اول فایل <b>Fast (Small)</b> رو تست کن، بعد اگه خواستی برو سراغ Full/All!
+              </div>
+            </div>
+
+            <div class="bubble">
+              <div class="bubble-title" id="t_b2t">Cute rule ✨</div>
+              <div class="bubble-text" id="t_b2">
+                چندتا کانفیگ رو تست کن و بهترین Ping/Speed رو نگه دار 😺
+              </div>
+            </div>
+          </div>
+
+          <div class="mascot-footer">
+            <span class="tiny" id="t_last">آخرین آپدیت:</span>
+            <strong class="tiny strong" id="lastUpdate">2026-01-27</strong>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="download" id="download">
+    <!-- Download -->
+    <section class="section" id="download">
       <div class="section-head">
-        <h2 id="t_d_title">دانلود مستقیم</h2>
-        <p class="muted" id="t_d_desc">
-          روی هر کارت کلیک کن تا دانلود شروع بشه. (لینک‌ها relative هستن)
-        </p>
+        <h2 class="section-title" id="t_d_title">دانلودهای خوشگل 🍓</h2>
+        <p class="section-desc" id="t_d_desc">روی کارت‌ها بزن تا دانلود شروع بشه (لینک‌ها relative هستن).</p>
       </div>
 
-      <div class="dl-grid">
-        <a class="dl-item" href="./Clean-IPs.txt" download>
-          <div class="dl-emoji">✅</div>
-          <div class="dl-body">
-            <div class="dl-title" id="t_dl1">Clean IPs (Today)</div>
-            <div class="dl-sub" id="t_dl1s">لیست IPهای تمیز</div>
-          </div>
-          <div class="dl-arrow">↓</div>
+      <div class="cards">
+        <a class="card dl pink" href="./Clean-IPs.txt" download>
+          <div class="card-emoji">✅</div>
+          <div class="card-title" id="t_dl1">Clean IPs (Today)</div>
+          <div class="card-sub" id="t_dl1s">لیست IPهای تمیز</div>
+          <div class="card-chip" id="t_c1">Recommended</div>
+          <div class="card-arrow">⬇</div>
         </a>
 
-        <a class="dl-item" href="./V2ray-Config-Small.txt" download>
-          <div class="dl-emoji">🚀</div>
-          <div class="dl-body">
-            <div class="dl-title" id="t_dl2">Fast (Small)</div>
-            <div class="dl-sub" id="t_dl2s">سبک و سریع برای تست</div>
-          </div>
-          <div class="dl-arrow">↓</div>
+        <a class="card dl peach" href="./V2ray-Config-Small.txt" download>
+          <div class="card-emoji">🚀</div>
+          <div class="card-title" id="t_dl2">Fast (Small)</div>
+          <div class="card-sub" id="t_dl2s">سبک و سریع برای تست</div>
+          <div class="card-chip" id="t_c2">Quick</div>
+          <div class="card-arrow">⬇</div>
         </a>
 
-        <a class="dl-item" href="./V2ray-Config-Full.txt" download>
-          <div class="dl-emoji">⭐</div>
-          <div class="dl-body">
-            <div class="dl-title" id="t_dl3">Premium (Full)</div>
-            <div class="dl-sub" id="t_dl3s">لیست کامل‌تر</div>
-          </div>
-          <div class="dl-arrow">↓</div>
+        <a class="card dl lilac" href="./V2ray-Config-Full.txt" download>
+          <div class="card-emoji">⭐</div>
+          <div class="card-title" id="t_dl3">Premium (Full)</div>
+          <div class="card-sub" id="t_dl3s">لیست کامل‌تر</div>
+          <div class="card-chip" id="t_c3">Full</div>
+          <div class="card-arrow">⬇</div>
         </a>
 
-        <a class="dl-item" href="./V2ray-Config-All.txt" download>
-          <div class="dl-emoji">🔥</div>
-          <div class="dl-body">
-            <div class="dl-title" id="t_dl4">Ultimate (All)</div>
-            <div class="dl-sub" id="t_dl4s">همه‌چیز یکجا</div>
-          </div>
-          <div class="dl-arrow">↓</div>
+        <a class="card dl mint" href="./V2ray-Config-All.txt" download>
+          <div class="card-emoji">🔥</div>
+          <div class="card-title" id="t_dl4">Ultimate (All)</div>
+          <div class="card-sub" id="t_dl4s">همه‌چیز یکجا</div>
+          <div class="card-chip" id="t_c4">All-in-one</div>
+          <div class="card-arrow">⬇</div>
         </a>
       </div>
 
-      <div class="note">
-        <div class="note-dot" aria-hidden="true"></div>
-        <p id="t_note">
-          نکته: بهترین تجربه روی GitHub Pages است. README فقط معرفی و لینک می‌ماند.
-        </p>
+      <div class="note cute">
+        <span class="note-dot" aria-hidden="true"></span>
+        <p id="t_note">این صفحه روی GitHub Pages خیلی قشنگ‌تره. README فقط معرفی و لینک می‌مونه 💗</p>
       </div>
     </section>
 
-    <footer class="foot">
-      <div class="foot-left">
-        <span id="t_last">آخرین آپدیت:</span>
-        <strong id="lastUpdate">2026-01-27</strong>
+    <!-- How -->
+    <section class="section" id="how">
+      <div class="section-head">
+        <h2 class="section-title" id="t_h_title">راهنمای سریع 🐾</h2>
+        <p class="section-desc" id="t_h_desc">۳ قدم کوچولو تا وصل شدن ✨</p>
       </div>
-      <div class="foot-right">
-        <a class="link" href="./README.md">README</a>
-        <span class="dot">•</span>
-        <a class="link" href="./LICENSE">MIT License</a>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-no">1</div>
+          <div class="step-title" id="t_h1t">دانلود</div>
+          <div class="step-text" id="t_h1">یکی از فایل‌ها رو از بالا دانلود کن.</div>
+        </div>
+
+        <div class="step">
+          <div class="step-no">2</div>
+          <div class="step-title" id="t_h2t">کپی</div>
+          <div class="step-text" id="t_h2">محتوا رو باز کن و همه کانفیگ‌ها رو Copy کن.</div>
+        </div>
+
+        <div class="step">
+          <div class="step-no">3</div>
+          <div class="step-title" id="t_h3t">ایمپورت + تست</div>
+          <div class="step-text" id="t_h3">در v2rayNG / Hiddify Import کن و بهترین Ping رو نگه دار.</div>
+        </div>
+      </div>
+
+      <div class="kawaii-bar">
+        <span class="kawaii">🍬</span>
+        <span class="kawaii" id="t_k1">Fast رو اول تست کن</span>
+        <span class="kawaii">🍡</span>
+        <span class="kawaii" id="t_k2">بعدش Full/All</span>
+        <span class="kawaii">🍧</span>
+      </div>
+    </section>
+
+    <!-- FAQ (cute accordion) -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2 class="section-title" id="t_faq_t">سوال‌های بامزه 🧸</h2>
+        <p class="section-desc" id="t_faq_d">اگه چیزی عجیبه، اینجا جوابشه!</p>
+      </div>
+
+      <div class="faq">
+        <details class="qa">
+          <summary id="t_q1">چرا بعضی کانفیگ‌ها بعداً از کار می‌افتن؟</summary>
+          <p id="t_a1">چون مسیرها و شرایط شبکه تغییر می‌کنه. به همین خاطر لیست‌ها روزانه آپدیت می‌شن.</p>
+        </details>
+
+        <details class="qa">
+          <summary id="t_q2">کدوم فایل بهتره؟</summary>
+          <p id="t_a2"><b>Fast</b> برای تست سریع، <b>Full</b> برای تنوع بیشتر، <b>All</b> برای همه‌چیز یکجا.</p>
+        </details>
+
+        <details class="qa">
+          <summary id="t_q3">این صفحه بهتره یا README؟</summary>
+          <p id="t_a3">این صفحه برای تجربه‌ی خوشگل و دانلود راحت؛ README برای توضیحات و لینک‌ها.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="footer-badge">🎀</div>
+        <div>
+          <div class="footer-title" id="t_ft">V2Ray Clean Hub</div>
+          <div class="footer-sub" id="t_fs">Made cute • Made simple • Made daily</div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a class="f-link" href="./README.md">README</a>
+        <span class="sep">•</span>
+        <a class="f-link" href="./LICENSE">MIT</a>
+        <span class="sep">•</span>
+        <a class="f-link" href="#download" id="t_back">Back to downloads</a>
       </div>
     </footer>
   </main>
 
   <script>
+    // --- cute floating hearts generator ---
+    (function hearts(){
+      const holder = document.querySelector(".hearts");
+      if(!holder) return;
+      const icons = ["💗","💖","💕","💘","🌸","✨","🎀","🧁"];
+      const count = 18;
+      for(let i=0;i<count;i++){
+        const s = document.createElement("span");
+        s.className = "heart";
+        s.textContent = icons[Math.floor(Math.random()*icons.length)];
+        s.style.left = (Math.random()*100) + "%";
+        s.style.animationDelay = (Math.random()*6) + "s";
+        s.style.animationDuration = (8 + Math.random()*8) + "s";
+        s.style.fontSize = (14 + Math.random()*14) + "px";
+        holder.appendChild(s);
+      }
+    })();
+
     const fa = {
-      badge: "آپدیت روزانه • Clean IPs • V2Ray/Xray",
-      title: "لیست روزانه IP های تمیز و کانفیگ‌های V2Ray/Xray",
-      subtitle: "دانلود مستقیم فایل‌ها با آپدیت روزانه — طراحی شده برای تست سریع و انتخاب بهترین گزینه.",
-      cta: "رفتن به دانلودها",
-      stat1k: "آپدیت",
-      stat1v: "روزانه",
-      stat2k: "فرمت‌ها",
-      stat2v: "VLESS • VMESS • Trojan • ...",
-      stat3k: "سازگار با",
-      stat3v: "v2rayNG • Hiddify • FoXray",
-      f_title: "چرا اینجا؟",
-      f1: "IPهای تمیز برای مسیرهای CDN/Cloudflare (اغلب پایدارتر).",
-      f2: "فایل‌های سبک و کامل برای نیازهای مختلف.",
-      f3: "لینک‌های دانلود مستقیم + آماده کپی/ایمپورت.",
-      h_title: "راهنمای سریع",
-      h1: "یکی از فایل‌ها را دانلود کن.",
-      h2: "محتوا را کپی کن.",
-      h3: "در اپ Import کن و چند گزینه را تست بگیر.",
-      d_title: "دانلود مستقیم",
-      d_desc: "روی هر کارت کلیک کن تا دانلود شروع بشه. (لینک‌ها relative هستن)",
-      dl1: "Clean IPs (Today)",
-      dl1s: "لیست IPهای تمیز",
-      dl2: "Fast (Small)",
-      dl2s: "سبک و سریع برای تست",
-      dl3: "Premium (Full)",
-      dl3s: "لیست کامل‌تر",
-      dl4: "Ultimate (All)",
-      dl4s: "همه‌چیز یکجا",
-      note: "نکته: بهترین تجربه روی GitHub Pages است. README فقط معرفی و لینک می‌ماند.",
-      last: "آخرین آپدیت:",
-      btn: "English"
+      tagline: "کیوت • روزانه • مستقیم",
+      quick: "دانلودها",
+      p1:"آپدیت روزانه", p2:"دانلود مستقیم", p3:"سریع برای تست",
+      title:"مرکز کیوتِ Clean IP ها و کانفیگ‌های V2Ray/Xray",
+      subtitle:"همه‌چی آماده‌ست: فایل‌ها رو بگیر، ایمپورت کن، بهترین پینگ رو انتخاب کن 💞",
+      cta1:"بریم دانلود 😼",
+      cta2:"راهنمای سریع",
+      m1k:"آپدیت", m1v:"Daily",
+      m2k:"مناسب برای", m2v:"v2rayNG / Hiddify",
+      m3k:"فرمت‌ها", m3v:"VLESS • VMESS • ...",
+      mascot:"من کمک‌کننده‌ی صورتی‌اتم!",
+      b1t:"Tip 💡",
+      b1:"اول فایل <b>Fast (Small)</b> رو تست کن، بعد اگه خواستی برو سراغ Full/All!",
+      b2t:"قانون کیوت ✨",
+      b2:"چندتا کانفیگ رو تست کن و بهترین Ping/Speed رو نگه دار 😺",
+      last:"آخرین آپدیت:",
+      d_title:"دانلودهای خوشگل 🍓",
+      d_desc:"روی کارت‌ها بزن تا دانلود شروع بشه (لینک‌ها relative هستن).",
+      dl1:"Clean IPs (Today)", dl1s:"لیست IPهای تمیز", c1:"پیشنهادی",
+      dl2:"Fast (Small)", dl2s:"سبک و سریع برای تست", c2:"سریع",
+      dl3:"Premium (Full)", dl3s:"لیست کامل‌تر", c3:"کامل",
+      dl4:"Ultimate (All)", dl4s:"همه‌چیز یکجا", c4:"همه‌چی",
+      note:"این صفحه روی GitHub Pages خیلی قشنگ‌تره. README فقط معرفی و لینک می‌مونه 💗",
+      h_title:"راهنمای سریع 🐾",
+      h_desc:"۳ قدم کوچولو تا وصل شدن ✨",
+      h1t:"دانلود", h1:"یکی از فایل‌ها رو از بالا دانلود کن.",
+      h2t:"کپی", h2:"محتوا رو باز کن و همه کانفیگ‌ها رو Copy کن.",
+      h3t:"ایمپورت + تست", h3:"در v2rayNG / Hiddify Import کن و بهترین Ping رو نگه دار.",
+      k1:"Fast رو اول تست کن", k2:"بعدش Full/All",
+      faq_t:"سوال‌های بامزه 🧸",
+      faq_d:"اگه چیزی عجیبه، اینجا جوابشه!",
+      q1:"چرا بعضی کانفیگ‌ها بعداً از کار می‌افتن؟",
+      a1:"چون مسیرها و شرایط شبکه تغییر می‌کنه. به همین خاطر لیست‌ها روزانه آپدیت می‌شن.",
+      q2:"کدوم فایل بهتره؟",
+      a2:"<b>Fast</b> برای تست سریع، <b>Full</b> برای تنوع بیشتر، <b>All</b> برای همه‌چیز یکجا.",
+      q3:"این صفحه بهتره یا README؟",
+      a3:"این صفحه برای تجربه‌ی خوشگل و دانلود راحت؛ README برای توضیحات و لینک‌ها.",
+      ft:"V2Ray Clean Hub",
+      fs:"کیوت ساخته شده • ساده ساخته شده • روزانه ساخته شده",
+      back:"برگشت به دانلودها",
+      btn:"English"
     };
 
     const en = {
-      badge: "Daily updates • Clean IPs • V2Ray/Xray",
-      title: "Daily Clean IPs & V2Ray/Xray Configs",
-      subtitle: "Direct downloads with daily updates — built for quick testing and picking the best node.",
-      cta: "Go to downloads",
-      stat1k: "Update",
-      stat1v: "Daily",
-      stat2k: "Formats",
-      stat2v: "VLESS • VMESS • Trojan • ...",
-      stat3k: "Works with",
-      stat3v: "v2rayNG • Hiddify • FoXray",
-      f_title: "Why this repo?",
-      f1: "Clean IPs for CDN / Cloudflare paths (often more stable).",
-      f2: "Light and full lists for different needs.",
-      f3: "Direct download links + ready to import.",
-      h_title: "Quick guide",
-      h1: "Download one of the files.",
-      h2: "Copy the configs.",
-      h3: "Import in your app and test a few options.",
-      d_title: "Direct download",
-      d_desc: "Click any card to download. (Links are relative inside the repo)",
-      dl1: "Clean IPs (Today)",
-      dl1s: "Clean IP list",
-      dl2: "Fast (Small)",
-      dl2s: "Light & quick testing",
-      dl3: "Premium (Full)",
-      dl3s: "More complete list",
-      dl4: "Ultimate (All)",
-      dl4s: "Everything in one file",
-      note: "Tip: Best experience on GitHub Pages. Keep README for docs + links.",
-      last: "Last update:",
-      btn: "فارسی"
+      tagline: "Cute • Daily • Direct",
+      quick: "Downloads",
+      p1:"Daily updates", p2:"Direct download", p3:"Quick testing",
+      title:"Your Cute Hub for Clean IPs & V2Ray/Xray Configs",
+      subtitle:"Everything is ready: download, import, then keep the best ping 💞",
+      cta1:"Let’s download 😼",
+      cta2:"Quick guide",
+      m1k:"Update", m1v:"Daily",
+      m2k:"Works with", m2v:"v2rayNG / Hiddify",
+      m3k:"Formats", m3v:"VLESS • VMESS • ...",
+      mascot:"I’m your pink helper!",
+      b1t:"Tip 💡",
+      b1:"Start with <b>Fast (Small)</b>, then try Full/All if needed!",
+      b2t:"Cute rule ✨",
+      b2:"Test a few configs and keep the best ping/speed 😺",
+      last:"Last update:",
+      d_title:"Cute downloads 🍓",
+      d_desc:"Tap a card to download (links are relative inside the repo).",
+      dl1:"Clean IPs (Today)", dl1s:"Clean IP list", c1:"Recommended",
+      dl2:"Fast (Small)", dl2s:"Light & quick testing", c2:"Quick",
+      dl3:"Premium (Full)", dl3s:"More complete list", c3:"Full",
+      dl4:"Ultimate (All)", dl4s:"Everything in one file", c4:"All-in-one",
+      note:"Tip: This page looks cutest on GitHub Pages. Keep README for docs + links 💗",
+      h_title:"Quick guide 🐾",
+      h_desc:"3 tiny steps to get connected ✨",
+      h1t:"Download", h1:"Download one file from above.",
+      h2t:"Copy", h2:"Open it and copy all configs.",
+      h3t:"Import + test", h3:"Import in v2rayNG / Hiddify and keep the best ping.",
+      k1:"Test Fast first", k2:"Then Full/All",
+      faq_t:"Cute FAQ 🧸",
+      faq_d:"If something feels weird, answers are here!",
+      q1:"Why do some configs stop working later?",
+      a1:"Networks and routes change. That’s why lists are updated daily.",
+      q2:"Which file should I pick?",
+      a2:"<b>Fast</b> for quick testing, <b>Full</b> for more variety, <b>All</b> for everything.",
+      q3:"Is this page better than README?",
+      a3:"This page is for cute UX & quick downloads; README is for docs and links.",
+      ft:"V2Ray Clean Hub",
+      fs:"Made cute • Made simple • Made daily",
+      back:"Back to downloads",
+      btn:"فارسی"
     };
 
     let isEn = false;
 
-    function applyLang(d) {
-      document.documentElement.lang = isEn ? "en" : "fa";
-      document.documentElement.dir = isEn ? "ltr" : "rtl";
-
-      document.getElementById("t_badge").textContent = d.badge;
-      document.getElementById("t_title").textContent = d.title;
-      document.getElementById("t_subtitle").textContent = d.subtitle;
-      document.getElementById("t_cta").textContent = d.cta;
-
-      document.getElementById("t_stat1k").textContent = d.stat1k;
-      document.getElementById("t_stat1v").textContent = d.stat1v;
-      document.getElementById("t_stat2k").textContent = d.stat2k;
-      document.getElementById("t_stat2v").textContent = d.stat2v;
-      document.getElementById("t_stat3k").textContent = d.stat3k;
-      document.getElementById("t_stat3v").textContent = d.stat3v;
-
-      document.getElementById("t_f_title").textContent = d.f_title;
-      document.getElementById("t_f1").textContent = d.f1;
-      document.getElementById("t_f2").textContent = d.f2;
-      document.getElementById("t_f3").textContent = d.f3;
-
-      document.getElementById("t_h_title").textContent = d.h_title;
-      document.getElementById("t_h1").textContent = d.h1;
-      document.getElementById("t_h2").textContent = d.h2;
-      document.getElementById("t_h3").textContent = d.h3;
-
-      document.getElementById("t_d_title").textContent = d.d_title;
-      document.getElementById("t_d_desc").textContent = d.d_desc;
-
-      document.getElementById("t_dl1").textContent = d.dl1;
-      document.getElementById("t_dl1s").textContent = d.dl1s;
-      document.getElementById("t_dl2").textContent = d.dl2;
-      document.getElementById("t_dl2s").textContent = d.dl2s;
-      document.getElementById("t_dl3").textContent = d.dl3;
-      document.getElementById("t_dl3s").textContent = d.dl3s;
-      document.getElementById("t_dl4").textContent = d.dl4;
-      document.getElementById("t_dl4s").textContent = d.dl4s;
-
-      document.getElementById("t_note").textContent = d.note;
-      document.getElementById("t_last").textContent = d.last;
-
-      document.getElementById("langBtn").textContent = d.btn;
+    function setHTML(id, html){
+      const el = document.getElementById(id);
+      if(el) el.innerHTML = html;
+    }
+    function setText(id, text){
+      const el = document.getElementById(id);
+      if(el) el.textContent = text;
     }
 
-    function toggleLang() {
+    function applyLang(d){
+      document.documentElement.lang = isEn ? "en" : "fa";
+      document.documentElement.dir  = isEn ? "ltr" : "rtl";
+
+      setText("t_tagline", d.tagline);
+      setText("t_quick", d.quick);
+
+      setText("t_p1", d.p1); setText("t_p2", d.p2); setText("t_p3", d.p3);
+      setText("t_title", d.title);
+      setText("t_subtitle", d.subtitle);
+
+      setText("t_cta1", d.cta1);
+      setText("t_cta2", d.cta2);
+
+      setText("t_m1k", d.m1k); setText("t_m1v", d.m1v);
+      setText("t_m2k", d.m2k); setText("t_m2v", d.m2v);
+      setText("t_m3k", d.m3k); setText("t_m3v", d.m3v);
+
+      setText("t_mascot", d.mascot);
+      setText("t_last", d.last);
+      setText("t_b1t", d.b1t); setHTML("t_b1", d.b1);
+      setText("t_b2t", d.b2t); setHTML("t_b2", d.b2);
+
+      setText("t_d_title", d.d_title);
+      setText("t_d_desc", d.d_desc);
+
+      setText("t_dl1", d.dl1); setText("t_dl1s", d.dl1s); setText("t_c1", d.c1);
+      setText("t_dl2", d.dl2); setText("t_dl2s", d.dl2s); setText("t_c2", d.c2);
+      setText("t_dl3", d.dl3); setText("t_dl3s", d.dl3s); setText("t_c3", d.c3);
+      setText("t_dl4", d.dl4); setText("t_dl4s", d.dl4s); setText("t_c4", d.c4);
+
+      setText("t_note", d.note);
+
+      setText("t_h_title", d.h_title);
+      setText("t_h_desc", d.h_desc);
+      setText("t_h1t", d.h1t); setText("t_h1", d.h1);
+      setText("t_h2t", d.h2t); setText("t_h2", d.h2);
+      setText("t_h3t", d.h3t); setText("t_h3", d.h3);
+
+      setText("t_k1", d.k1);
+      setText("t_k2", d.k2);
+
+      setText("t_faq_t", d.faq_t);
+      setText("t_faq_d", d.faq_d);
+      setText("t_q1", d.q1); setHTML("t_a1", d.a1);
+      setText("t_q2", d.q2); setHTML("t_a2", d.a2);
+      setText("t_q3", d.q3); setHTML("t_a3", d.a3);
+
+      setText("t_ft", d.ft);
+      setText("t_fs", d.fs);
+      setText("t_back", d.back);
+
+      setText("langBtn", d.btn);
+    }
+
+    function toggleLang(){
       isEn = !isEn;
       applyLang(isEn ? en : fa);
     }
