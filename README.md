@@ -23,7 +23,7 @@
 
 <br/><br/>
 
-<a href="./index.html"><b>🌐 صفحه‌ی کیوت (GitHub Pages)</b></a>
+<a href="https://idtheo.github.io/V2Ray-CleanIPs-Servers/"><b>🌐 GitHub Pages </b></a>
 &nbsp;•&nbsp;
 <a href="#-download"><b>⬇️ دانلود مستقیم</b></a>
 &nbsp;•&nbsp;
