@@ -600,3 +600,54 @@ body{
   .cards{ grid-template-columns: 1fr; }
   .steps-grid{ grid-template-columns: 1fr; }
 }
+/* ===== Footer cute hover icons ===== */
+
+.footer-sub a{
+  position: relative;
+  color: rgba(255,224,242,.95);
+  text-decoration: none;
+  font-weight: 900;
+  border-bottom: 1px dashed rgba(255,255,255,.35);
+  padding-right: 18px;
+  transition: 
+    color .15s ease,
+    border-color .15s ease,
+    text-shadow .15s ease;
+}
+
+/* Base icon (hidden by default) */
+.footer-sub a::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(.6);
+  opacity: 0;
+  transition: 
+    opacity .15s ease,
+    transform .15s ease;
+  font-size: 13px;
+}
+
+/* GitHub icon */
+.footer-sub a.gh::after{
+  content: "🐙"; /* GitHub vibe */
+}
+
+/* X icon */
+.footer-sub a.x::after{
+  content: "𝕏";
+  font-weight: 900;
+}
+
+/* Hover effect */
+.footer-sub a:hover{
+  color: #fff;
+  border-color: rgba(255,255,255,.6);
+  text-shadow: 0 0 12px rgba(255,95,183,.55);
+}
+
+.footer-sub a:hover::after{
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
