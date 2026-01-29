@@ -3,7 +3,10 @@
 <div align="center">
 
 <!-- Title Art -->
-<img alt="V2Ray-CleanIPs-Servers" src="https://capsule-render.vercel.app/api?type=waving&color=FF69B4&height=200&section=header&text=V2Ray%20Clean%20IPs%20%26%20Configs&fontSize=42&fontColor=ffffff&animation=twinkling" />
+<img
+  src="https://capsule-render.vercel.app/api?type=waving&color=FF69B4&height=180&section=header&text=V2Ray%20Clean%20IPs&fontSize=40&fontColor=ffffff"
+  alt="V2Ray Clean IPs Header"
+/>
 
 <br/>
 
