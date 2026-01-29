@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="لیست روزانه Clean IP و کانفیگ‌های V2Ray/Xray (Fast / Premium / Ultimate) + دانلود مستقیم." />
+  <meta name="theme-color" content="#ff4fa3" />
   <title>V2Ray Clean IPs & Configs — Daily</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,15 +15,16 @@
 </head>
 
 <body>
-  <div class="bg"></div>
+  <div class="bg" aria-hidden="true"></div>
 
   <main class="wrap">
     <header class="hero">
-      <div class="badge">Daily • Clean IPs • V2Ray/Xray</div>
+      <div class="badge" id="t_badge">Daily updates • Clean IPs • V2Ray/Xray</div>
 
       <h1 id="t_title">لیست روزانه IP های تمیز و کانفیگ‌های V2Ray/Xray</h1>
+
       <p class="subtitle" id="t_subtitle">
-        دانلود مستقیم فایل‌ها، آپدیت روزانه، مناسب اینترنت ایران.
+        دانلود مستقیم فایل‌ها با آپدیت روزانه — طراحی شده برای تست سریع و انتخاب بهترین گزینه.
       </p>
 
       <div class="hero-actions">
@@ -30,18 +32,18 @@
         <a class="btn primary" href="#download" id="t_cta">رفتن به دانلودها</a>
       </div>
 
-      <div class="stats">
-        <div class="stat">
+      <div class="stats" role="list">
+        <div class="stat" role="listitem">
           <div class="k" id="t_stat1k">آپدیت</div>
           <div class="v" id="t_stat1v">روزانه</div>
         </div>
-        <div class="stat">
+        <div class="stat" role="listitem">
           <div class="k" id="t_stat2k">فرمت‌ها</div>
-          <div class="v">VLESS / VMESS / ...</div>
+          <div class="v" id="t_stat2v">VLESS • VMESS • Trojan • ...</div>
         </div>
-        <div class="stat">
+        <div class="stat" role="listitem">
           <div class="k" id="t_stat3k">سازگار با</div>
-          <div class="v">v2rayNG • Hiddify • FoXray</div>
+          <div class="v" id="t_stat3v">v2rayNG • Hiddify • FoXray</div>
         </div>
       </div>
     </header>
@@ -50,8 +52,8 @@
       <article class="card">
         <h2 id="t_f_title">چرا اینجا؟</h2>
         <ul class="list">
-          <li id="t_f1">IPهای تمیز برای CDN / Cloudflare (مناسب‌تر برای اتصال).</li>
-          <li id="t_f2">فایل‌های سبک و سنگین برای همه نوع کاربری.</li>
+          <li id="t_f1">IPهای تمیز برای مسیرهای CDN/Cloudflare (اغلب پایدارتر).</li>
+          <li id="t_f2">فایل‌های سبک و کامل برای نیازهای مختلف.</li>
           <li id="t_f3">لینک‌های دانلود مستقیم + آماده کپی/ایمپورت.</li>
         </ul>
       </article>
@@ -61,7 +63,7 @@
         <ol class="steps">
           <li id="t_h1">یکی از فایل‌ها را دانلود کن.</li>
           <li id="t_h2">محتوا را کپی کن.</li>
-          <li id="t_h3">در اپ (v2rayNG/Hiddify) Import کن و تست بگیر.</li>
+          <li id="t_h3">در اپ Import کن و چند گزینه را تست بگیر.</li>
         </ol>
       </article>
     </section>
@@ -69,10 +71,11 @@
     <section class="download" id="download">
       <div class="section-head">
         <h2 id="t_d_title">دانلود مستقیم</h2>
-        <p class="muted" id="t_d_desc">فقط روی لینک‌ها کلیک کن. اگر خواستی، بعداً اسم فایل‌ها را عوض کن و اینجا هم آپدیت کن.</p>
+        <p class="muted" id="t_d_desc">
+          روی هر کارت کلیک کن تا دانلود شروع بشه. (لینک‌ها relative هستن)
+        </p>
       </div>
 
-      <!-- لینک فایل‌ها: اینجا فقط اسم فایل‌هات مهمه -->
       <div class="dl-grid">
         <a class="dl-item" href="./Clean-IPs.txt" download>
           <div class="dl-emoji">✅</div>
@@ -112,9 +115,9 @@
       </div>
 
       <div class="note">
-        <div class="note-dot"></div>
+        <div class="note-dot" aria-hidden="true"></div>
         <p id="t_note">
-          نکته: این صفحه با GitHub Pages بهترین خروجی را می‌دهد. README فقط معرفی و لینک می‌ماند.
+          نکته: بهترین تجربه روی GitHub Pages است. README فقط معرفی و لینک می‌ماند.
         </p>
       </div>
     </section>
@@ -134,23 +137,26 @@
 
   <script>
     const fa = {
+      badge: "آپدیت روزانه • Clean IPs • V2Ray/Xray",
       title: "لیست روزانه IP های تمیز و کانفیگ‌های V2Ray/Xray",
-      subtitle: "دانلود مستقیم فایل‌ها، آپدیت روزانه، مناسب اینترنت ایران.",
+      subtitle: "دانلود مستقیم فایل‌ها با آپدیت روزانه — طراحی شده برای تست سریع و انتخاب بهترین گزینه.",
       cta: "رفتن به دانلودها",
       stat1k: "آپدیت",
       stat1v: "روزانه",
       stat2k: "فرمت‌ها",
+      stat2v: "VLESS • VMESS • Trojan • ...",
       stat3k: "سازگار با",
+      stat3v: "v2rayNG • Hiddify • FoXray",
       f_title: "چرا اینجا؟",
-      f1: "IPهای تمیز برای CDN / Cloudflare (مناسب‌تر برای اتصال).",
-      f2: "فایل‌های سبک و سنگین برای همه نوع کاربری.",
+      f1: "IPهای تمیز برای مسیرهای CDN/Cloudflare (اغلب پایدارتر).",
+      f2: "فایل‌های سبک و کامل برای نیازهای مختلف.",
       f3: "لینک‌های دانلود مستقیم + آماده کپی/ایمپورت.",
       h_title: "راهنمای سریع",
       h1: "یکی از فایل‌ها را دانلود کن.",
       h2: "محتوا را کپی کن.",
-      h3: "در اپ (v2rayNG/Hiddify) Import کن و تست بگیر.",
+      h3: "در اپ Import کن و چند گزینه را تست بگیر.",
       d_title: "دانلود مستقیم",
-      d_desc: "فقط روی لینک‌ها کلیک کن. اگر خواستی، بعداً اسم فایل‌ها را عوض کن و اینجا هم آپدیت کن.",
+      d_desc: "روی هر کارت کلیک کن تا دانلود شروع بشه. (لینک‌ها relative هستن)",
       dl1: "Clean IPs (Today)",
       dl1s: "لیست IPهای تمیز",
       dl2: "Fast (Small)",
@@ -159,19 +165,22 @@
       dl3s: "لیست کامل‌تر",
       dl4: "Ultimate (All)",
       dl4s: "همه‌چیز یکجا",
-      note: "نکته: این صفحه با GitHub Pages بهترین خروجی را می‌دهد. README فقط معرفی و لینک می‌ماند.",
+      note: "نکته: بهترین تجربه روی GitHub Pages است. README فقط معرفی و لینک می‌ماند.",
       last: "آخرین آپدیت:",
       btn: "English"
     };
 
     const en = {
+      badge: "Daily updates • Clean IPs • V2Ray/Xray",
       title: "Daily Clean IPs & V2Ray/Xray Configs",
-      subtitle: "Direct downloads, daily updates, optimized for unstable networks.",
+      subtitle: "Direct downloads with daily updates — built for quick testing and picking the best node.",
       cta: "Go to downloads",
       stat1k: "Update",
       stat1v: "Daily",
       stat2k: "Formats",
+      stat2v: "VLESS • VMESS • Trojan • ...",
       stat3k: "Works with",
+      stat3v: "v2rayNG • Hiddify • FoXray",
       f_title: "Why this repo?",
       f1: "Clean IPs for CDN / Cloudflare paths (often more stable).",
       f2: "Light and full lists for different needs.",
@@ -179,9 +188,9 @@
       h_title: "Quick guide",
       h1: "Download one of the files.",
       h2: "Copy the configs.",
-      h3: "Import in your app (v2rayNG/Hiddify) and test.",
+      h3: "Import in your app and test a few options.",
       d_title: "Direct download",
-      d_desc: "Click a file to download. If you rename files later, update links here too.",
+      d_desc: "Click any card to download. (Links are relative inside the repo)",
       dl1: "Clean IPs (Today)",
       dl1s: "Clean IP list",
       dl2: "Fast (Small)",
@@ -190,7 +199,7 @@
       dl3s: "More complete list",
       dl4: "Ultimate (All)",
       dl4s: "Everything in one file",
-      note: "Tip: This page looks best on GitHub Pages. Keep README for docs + links.",
+      note: "Tip: Best experience on GitHub Pages. Keep README for docs + links.",
       last: "Last update:",
       btn: "فارسی"
     };
@@ -201,6 +210,7 @@
       document.documentElement.lang = isEn ? "en" : "fa";
       document.documentElement.dir = isEn ? "ltr" : "rtl";
 
+      document.getElementById("t_badge").textContent = d.badge;
       document.getElementById("t_title").textContent = d.title;
       document.getElementById("t_subtitle").textContent = d.subtitle;
       document.getElementById("t_cta").textContent = d.cta;
@@ -208,7 +218,9 @@
       document.getElementById("t_stat1k").textContent = d.stat1k;
       document.getElementById("t_stat1v").textContent = d.stat1v;
       document.getElementById("t_stat2k").textContent = d.stat2k;
+      document.getElementById("t_stat2v").textContent = d.stat2v;
       document.getElementById("t_stat3k").textContent = d.stat3k;
+      document.getElementById("t_stat3v").textContent = d.stat3v;
 
       document.getElementById("t_f_title").textContent = d.f_title;
       document.getElementById("t_f1").textContent = d.f1;
