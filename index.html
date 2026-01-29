@@ -58,7 +58,7 @@
         </div>
 
         <h1 class="hero-title" id="t_title">
-          مرکز کیوتِ Clean IP ها و کانفیگ‌های V2Ray/Xray
+          Clean IP & V2Ray
         </h1>
 
         <p class="hero-sub" id="t_subtitle">
@@ -127,8 +127,8 @@
     <!-- Download -->
     <section class="section" id="download">
       <div class="section-head">
-        <h2 class="section-title" id="t_d_title">بخش دانلود 👉🏻👈🏻</h2>
-        <p class="section-desc" id="t_d_desc">روی کارت‌ها بزن تا دانلود شروع بشه (لینک‌ها relative هستن).</p>
+        <h2 class="section-title" id="t_d_title">بخش دانلود</h2>
+        <p class="section-desc" id="t_d_desc">روی کارت‌ها بزن تا دانلود شروع بشه (لینک‌ها relative هستن)</p>
       </div>
 
       <div class="cards">
@@ -165,10 +165,17 @@
         </a>
       </div>
 
-      <div class="note cute">
-        <span class="note-dot" aria-hidden="true"></span>
-        <p id="t_note">این صفحه روی GitHub Pages خیلی قشنگ‌تره. README فقط معرفی و لینک می‌مونه 💗</p>
-      </div>
+<div class="note cute">
+  <span class="note-dot" aria-hidden="true"></span>
+  <p id="t_note">
+    مفید بود؟ یه ⭐ بده 😊
+    <a href="https://github.com/idtheo/V2Ray-CleanIPs-Servers"
+       target="_blank"
+       rel="noopener">
+      Star بده
+    </a>
+  </p>
+</div>
     </section>
 
     <!-- How -->
@@ -275,7 +282,7 @@
       tagline: "کیوت • روزانه • مستقیم",
       quick: "دانلودها",
       p1:"آپدیت روزانه", p2:"دانلود مستقیم", p3:"سریع برای تست",
-      title:"مرکز کیوتِ Clean IP ها و کانفیگ‌های V2Ray/Xray",
+      title:"Clean IP & V2Ray",
       subtitle:"همه‌چی آماده‌ست: فایل‌ها رو بگیر، ایمپورت کن، بهترین پینگ رو انتخاب کن 💞",
       cta1:"بریم دانلود 😼",
       cta2:"راهنمای سریع",
@@ -288,13 +295,13 @@
       b2t:"قانون کیوت ✨",
       b2:"چندتا کانفیگ رو تست کن و بهترین Ping/Speed رو نگه دار 😺",
       last:"آخرین آپدیت:",
-      d_title:"بخش دانلود 👉🏻👈🏻",
-      d_desc:"روی کارت‌ها بزن تا دانلود شروع بشه (لینک‌ها relative هستن).",
+      d_title:"بخش دانلود",
+      d_desc:"روی کارت‌ها بزن تا دانلود شروع بشه (لینک‌ها relative هستن)",
       dl1:"Clean IPs (Today)", dl1s:"لیست IPهای تمیز", c1:"پیشنهادی",
       dl2:"Fast (Small)", dl2s:"سبک و سریع برای تست", c2:"سریع",
       dl3:"Premium (Full)", dl3s:"لیست کامل‌تر", c3:"کامل",
       dl4:"Ultimate (All)", dl4s:"همه‌چیز یکجا", c4:"همه‌چی",
-      note:"این صفحه روی GitHub Pages خیلی قشنگ‌تره. README فقط معرفی و لینک می‌مونه 💗",
+      note: 'مفید بود؟ یه ⭐ بده 😊 <a href="https://github.com/idtheo/V2Ray-CleanIPs-Servers" target="_blank" rel="noopener">Star بده</a>',
       h_title:"راهنمای سریع 🐾",
       h_desc:"۳ قدم کوچولو تا وصل شدن ✨",
       h1t:"دانلود", h1:"یکی از فایل‌ها رو از بالا دانلود کن.",
@@ -319,7 +326,7 @@
       tagline: "Cute • Daily • Direct",
       quick: "Downloads",
       p1:"Daily updates", p2:"Direct download", p3:"Quick testing",
-      title:"Your Cute Hub for Clean IPs & V2Ray/Xray Configs",
+      title:"Clean IP & V2Ray",
       subtitle:"Everything is ready: download, import, then keep the best ping 💞",
       cta1:"Let’s download 😼",
       cta2:"Quick guide",
@@ -333,12 +340,12 @@
       b2:"Test a few configs and keep the best ping/speed 😺",
       last:"Last update:",
       d_title:"Cute downloads 🍓",
-      d_desc:"Tap a card to download (links are relative inside the repo).",
+      d_desc:"Tap a card to download (links are relative inside the repo)",
       dl1:"Clean IPs (Today)", dl1s:"Clean IP list", c1:"Recommended",
       dl2:"Fast (Small)", dl2s:"Light & quick testing", c2:"Quick",
       dl3:"Premium (Full)", dl3s:"More complete list", c3:"Full",
       dl4:"Ultimate (All)", dl4s:"Everything in one file", c4:"All-in-one",
-      note:"Tip: This page looks cutest on GitHub Pages. Keep README for docs + links 💗",
+      note: 'Found it useful? Give it a ⭐ 😊 <a href="https://github.com/idtheo/V2Ray-CleanIPs-Servers" target="_blank" rel="noopener">Star on GitHub</a>',
       h_title:"Quick guide 🐾",
       h_desc:"3 tiny steps to get connected ✨",
       h1t:"Download", h1:"Download one file from above.",
@@ -401,7 +408,7 @@
       setText("t_dl3", d.dl3); setText("t_dl3s", d.dl3s); setText("t_c3", d.c3);
       setText("t_dl4", d.dl4); setText("t_dl4s", d.dl4s); setText("t_c4", d.c4);
 
-      setText("t_note", d.note);
+      setHTML("t_note", d.note);
 
       setText("t_h_title", d.h_title);
       setText("t_h_desc", d.h_desc);
@@ -432,5 +439,16 @@
 
     applyLang(fa);
   </script>
+  <script>
+  // Auto date (shows today's date)
+  const el = document.getElementById("lastUpdate");
+  if (el) {
+    const d = new Date();
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    el.textContent = `${yyyy}-${mm}-${dd}`;
+  }
+</script>
 </body>
 </html>
