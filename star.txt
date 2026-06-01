@@ -1,4 +1,4 @@
 FETCH FAILED
-https://free-sub.indevs.in/star?t=1780287911
-UTC: 2026-06-01 04:25:24
+https://free-sub1.indevs.in1/star?t=1780298116
+UTC: 2026-06-01 07:15:29
 
