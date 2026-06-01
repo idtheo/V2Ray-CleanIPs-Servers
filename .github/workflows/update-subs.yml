@@ -28,7 +28,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          BASE_URL="https://free-sub1.indevs.in1"
+          BASE_URL="https://free-sub.indevs.in"
 
           fetch_any () {
             local key="$1"
